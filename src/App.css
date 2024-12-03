@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-image: url("/EeveeBG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1:hover {
+  transform: rotate(20deg);
+}
+
+.presentation {
+  background-color: rgba(255, 228, 196, 0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.makeAChoice {
+  background-color: rgba(255, 228, 196, 0.5);
+  padding: 1rem;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+select {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid gray;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 40px;
+  margin: 20px;
+  box-shadow: 0 2px 4px;
+}
+
+button:hover {
+  background-color: lightgray;
+  border: 2px solid gray;
+  transform: scale(1.08);
+}
+
+.pokemonSelect {
+  cursor: pointer;
+  box-shadow: 0 2px 4px;
+}
+
+.pokemonSelect:hover {
+  transform: scale(1.08);
+}
+
+.pokemonCard {
+  background-color: rgba(255, 228, 196, 0.9);
+  padding: 1rem;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 1rem auto;
+  text-align: center;
+  width: 170px;
+}
+
+.pokemonCard:hover {
+  transform: scale(1.08);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+

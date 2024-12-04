@@ -15,7 +15,7 @@ function PokemonApplication() {
     getPokemonList();
   }, []);
 
-  const fetchPokemonData = async () => {
+  const thePokemonData = async () => {
     if (!selectedPokemon) return;
     const response = await fetch(selectedPokemon);
     const json = await response.json();
@@ -34,7 +34,7 @@ function PokemonApplication() {
             ))}
         </select>
 
-        <button onClick={fetchPokemonData}>Get Pokemon Info</button>
+        <button onClick={thePokemonData}>Get Pokemon Info</button>
 
         {pokemonData && <Pokemon pokemonData={pokemonData} />}
       </div>
